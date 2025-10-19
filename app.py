@@ -59,7 +59,7 @@ def main():
         if st.button("Generar matriz de viga"):
             K = matriz_viga_4x4(L)
             st.markdown("### 🧮 Matriz local 4×4 de viga")
-            st.markdown(f"$$ 1/EI {sp.latex(K)} $$")
+            st.markdown(f"$$ {sp.latex(K)} $$")
             st.caption("EI se considera constante.")
 
     # --- OPCIÓN 2: MATRIZ DE PÓRTICO ---
